@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(315deg, #fd79b0 0%, $c-primary 74%);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+
+  .header_inner {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      font-family: 'CaramelloFree' !important;
+      font-size: 14px;
+
+      h1 {
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+
+    .header_search {
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+          svg {
+            fill: $c-hover;
+          }
+        }
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    .header_menu {
+      position: relative;
+
+      .menu {
+        display: none;
+
+        .menu_item + .menu_item {
+          margin-left: 20px;
+        }
+
+        .menu_item {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          display: inline-block;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            color: $c-hover;
+          }
+        }
+      }
+
+      .hamburger {
+        display: block;
+        width: 20px;
+        cursor: pointer;
+
+        &:hover {
+          span {
+            background-color: $c-hover;
+          }
+        }
+
+        span + span {
+          margin-top: 4px;
+        }
+
+        span {
+          display: block;
+          height: 2px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@include mq('sm') {
+  .header {
+    height: 80px;
+
+    .header_inner {
+      .header_logo {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include mq('lg') {
+  .header {
+    .header_inner {
+      .header_logo {
+        font-size: 18px;
+      }
+
+      .header_menu {
+        .menu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .hamburger {
+          display: none;
+        }
+      }
+    }
+  }
+}

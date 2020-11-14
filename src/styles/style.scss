@@ -1,0 +1,14 @@
+@import './config/variables';
+@import './config/mixins';
+@import './config/font';
+@import './config/elements';
+@import './config/grid';
+@import './config/global';
+
+@import './components/Header';
+@import './components/Footer';
+@import './components/SearchModal';
+@import './components/Product';
+@import './components/Loader';
+
+@import './pages/Home';

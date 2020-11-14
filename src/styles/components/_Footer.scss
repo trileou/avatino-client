@@ -1,0 +1,119 @@
+.footer {
+  border-top: 3px solid $c-primary;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .footer_section + .footer_section {
+    margin-top: 30px;
+  }
+
+  .footer_logo {
+    margin-top: 10px;
+    font-family: 'CaramelloFree' !important;
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .footer_information,
+  .footer_socials {
+    h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer_information {
+    ul {
+      li + li {
+        margin-top: 10px;
+      }
+
+      li {
+        display: block;
+        font-size: 16px;
+
+        a {
+          &:hover {
+            color: $c-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_socials {
+    .icons {
+      display: flex;
+
+      .icon + .icon {
+        margin-left: 10px;
+      }
+
+      .icon {
+        &:hover {
+          svg {
+            fill: $c-primary;
+          }
+        }
+      }
+    }
+
+    .newsletter {
+      margin-top: 10px;
+
+      form {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+
+        input {
+          flex: 1;
+          padding-left: 10px;
+          font-size: 16px;
+          display: inline-block;
+          border: none;
+          outline: none;
+        }
+
+        button {
+          display: block;
+          background-color: #000;
+          padding: 8px;
+          border: none;
+          outline: none;
+          @include mid-flex();
+          cursor: pointer;
+
+          &:hover {
+            background-color: $c-primary;
+          }
+
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+
+    .contact {
+      .hotline,
+      .email {
+        margin-top: 10px;
+        font-size: 16px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@include mq('md') {
+  .footer {
+    .footer_section + .footer_section {
+      margin-top: 0;
+    }
+  }
+}
