@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import { Eye } from '../components/Icon';
-
 import product from '../assets/product.jpg';
 
 export interface ProductProps {}
@@ -14,9 +12,6 @@ const Product: React.FC<ProductProps> = () => {
           <a href="./">
             <img className="img-fluid" src={product} alt="" />
           </a>
-          <span className="quick-view" title="Quick view">
-            <Eye />
-          </span>
         </div>
         <div className="product_meta">
           <a href="/">
