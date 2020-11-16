@@ -3,7 +3,7 @@
   background-image: linear-gradient(315deg, #fd79b0 0%, $c-primary 74%);
 
   .home_content {
-    margin-top: 5px;
+    margin-top: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -27,7 +27,7 @@
 
   .list-product-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 20px;
   }
@@ -46,6 +46,10 @@
   .home {
     padding-bottom: 50px;
 
+    .list-product-title {
+      font-size: 24px;
+    }
+
     .home_content {
       margin-top: 50px;
       padding-top: 20px;
@@ -54,7 +58,7 @@
       .list-product {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
-        row-gap: 30px;
+        row-gap: 20px;
         padding: 20px;
       }
     }
@@ -63,6 +67,10 @@
 
 @include mq('md') {
   .home {
+    .list-product-title {
+      font-size: 28px;
+    }
+
     .home_content {
       .list-product {
         grid-template-columns: repeat(3, 1fr);
@@ -73,6 +81,10 @@
 
 @include mq('lg') {
   .home {
+    .list-product-title {
+      font-size: 32px;
+    }
+
     .home_content {
       .list-product {
         grid-template-columns: repeat(4, 1fr);
@@ -83,6 +95,10 @@
 
 @include mq('xl') {
   .home {
+    .list-product-title {
+      font-size: 36px;
+    }
+
     .home_content {
       .list-product {
         grid-template-columns: repeat(5, 1fr);
