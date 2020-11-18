@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer_section col-md-4">
             <div className="footer_information">
-              <h2>Information</h2>
+              <h2>Thông tin</h2>
               <ul>
                 <li>
                   <a href="/">Giới thiệu</a>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer_section col-md-4">
             <div className="footer_socials">
-              <h2>Follow us</h2>
+              <h2>Theo dõi</h2>
               <div className="icons">
                 <div className="icon">
                   <a href="/">

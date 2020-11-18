@@ -1,7 +1,7 @@
 .footer {
-  border-top: 3px solid $c-primary;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: $c-primary;
 
   .footer_section + .footer_section {
     margin-top: 30px;
@@ -12,14 +12,16 @@
     font-family: 'CaramelloFree' !important;
     font-size: 36px;
     font-weight: 400;
-    color: #333;
+    color: #fff;
   }
 
   .footer_information,
   .footer_socials {
     h2 {
+      color: #fff;
       font-size: 26px;
       margin-bottom: 10px;
+      font-weight: 500;
     }
   }
 
@@ -30,12 +32,13 @@
       }
 
       li {
+        color: #fff;
         display: block;
         font-size: 16px;
 
         a {
           &:hover {
-            color: $c-primary;
+            color: $c-hover;
           }
         }
       }
@@ -50,11 +53,13 @@
         margin-left: 10px;
       }
 
-      .icon {
-        &:hover {
-          svg {
-            fill: $c-primary;
-          }
+      svg {
+        fill: #fff;
+      }
+
+      a:hover {
+        svg {
+          fill: $c-hover;
         }
       }
     }
@@ -66,6 +71,7 @@
         display: flex;
         align-items: center;
         border: 1px solid #ddd;
+        background-color: #fff;
 
         input {
           flex: 1;
@@ -78,7 +84,7 @@
 
         button {
           display: block;
-          background-color: #000;
+          background-color: $c-hover;
           padding: 8px;
           border: none;
           outline: none;
@@ -101,6 +107,7 @@
       .email {
         margin-top: 10px;
         font-size: 16px;
+        color: #fff;
 
         span {
           font-weight: 600;
