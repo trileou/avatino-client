@@ -1,0 +1,31 @@
+.menu {
+    margin-top: 100px;
+    height: 40px;
+}
+
+.group_menu {
+    position: relative;
+
+    .menu {
+      display: flex;
+
+        align-items: center;
+        // justify-content: center;
+      .menu_item + .menu_item {
+        margin-left: 20px;
+      }
+
+      .menu_item {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: $c-hover;
+        }
+      }
+    }
+}
